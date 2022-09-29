@@ -1,0 +1,164 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.carousel-inner, .carousel-item, .carousel-item img{
+	height: 60vh;
+}
+
+.carousel-item img{
+	object-fit: cover;
+}
+#showcase .carousel-caption{
+	bottom: auto;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#showcase .carousel-caption h5{
+	font-size: 60px;
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+#showcase .carousel-caption p{
+	font-size: 14px;
+}
+
+/*** navbar CSS **********/
+
+.header .navbar-nav .nav-link{
+	text-transform: uppercase;
+}
+
+.header .nav-item.active{
+	border-left: 1px solid orange;
+}
+
+/* ========== Homepage Icons section ==============*/
+
+.iconThumbnail > i{
+	font-size: 56px;
+}
+
+.iconThumbnail > h3{
+	font-size: 26px;
+	margin: 10px 0;
+}
+
+
+/***** GetReady Section *******/
+
+.getReady,
+.video{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+}
+
+.getReady{
+	background-image: url(../images/lights.jpg);
+}
+
+.getReady::before, .video::before{
+	content: "";
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 1.5rem!important;
+}
+
+.align-self-center {
+    -ms-flex-item-align: center!important;
+    align-self: center!important;
+}
+
+/***** video Section *******/
+
+.video{
+	background-image: url(../images/media.jpg);
+
+}
+
+.plyBtn:link, .plyBtn:visited{
+	color: white;
+	font-size: 48px;
+}
+
+.footer{
+	background-color: #000;
+}
+
+/*========About us > Icons CSS ============*/
+
+.icons i{
+	font-size: 48px;
+}
+#testimonals .owl-theme .owl-nav{
+	display: none;
+}
+
+@media all and (min-width:768px){
+	#testimonals .owl-theme .owl-nav{
+		margin-top: 10px;
+		display: block;
+		position: absolute;
+		top: -15px;
+		width: 100%;
+		left: 0;
+		right: 0;
+		transform: translateY(-50%);
+	}
+	#testimonals button.owl-prev{
+		position: absolute;
+		left: -60px;
+	}
+	#testimonals button.owl-next{
+		position: absolute;
+		right: -60px;
+	}
+	
+	#testimonals button.owl-prev i, #testimonals button.owl-next i{
+		font-size: 60px;
+	}
+	
+}
+
+/* ========== Service page CSS ==============*/
+
+.plans .list-group-item i{
+	font-size: 48px;
+}
+
+.plans .card {
+	transition: all .4s ease-in-out;
+}
+
+.plans .card:hover{
+	transform: translateY(-20px) scaleY(1.02);
+}
+
+/* ========== FAQ CSS ==============*/
+
+.faq .card{
+	background-color: #444;
+}
+
+.faq a.card-link:link,.faq a.card-link:visited {
+	color: #fff !important;
+	background-color: #444;
+}
+
+.card-text, .card-text:link, .card-text:visited{
+	color: #000;
+	text-decoration: none;
+}
